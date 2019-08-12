@@ -11,11 +11,15 @@ You need:
 
 Posts are written in markdown. You can use any markdown editor you like. [vscode's markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) plugin is very good for rich editing markdown files. 
 
+To update the blog you must [https://help.github.com/en/articles/fork-a-repo](fork the repository) and submit a pull request across the forks.
+
 ## Authoring a new post
 
 To author a new post run `yarn new:post "Your Post Name Here"` a directory, and markdown file will be created for you in `content/blog/Your-Post-Name-Here`
 
-Then you can author the post as normal with markdown. To run the server locally, run `yarn install && yarn start`. Our CI system checks for spelling errors, you can run this yourself with `yarn check:spell`, you will be prompted to either fix your mistakes or add your mistakes to a dictionary. You can add yourself to `authors/authors.json`, with some basic info about yourself, and a thumbnail can be placed in `content/assets/authors`.
+Then you can author the post as normal with markdown. To run the server locally, run `yarn install && yarn start` at which point you should be able to see the blog at [http://localhost:8000/](http://localhost:8000/)
+
+Our CI system checks for spelling errors, you can run this yourself with `yarn check:spell`, you will be prompted to either fix your mistakes or add your mistakes to a dictionary. You can add yourself to `authors/authors.json`, with some basic info about yourself, and a thumbnail can be placed in `content/assets/authors`.
 
 ## LaTeX
 
@@ -38,9 +42,9 @@ $$
 
 
 
-## Getting your post live
+## Getting your post published
 
-To get your post live, simply make a branch, create a pull request and then get it merged. Netlify will automatically pick up on new commits into master and deploy them. Any new content must be approved by @stodesca github will enforce this automatically with its codeowner system.
+To get a new post published on the live site, submit a pull request from your fork. (Any new content must be approved by @stodesca - github will enforce this automatically with its codeowner system.) Netlify will automatically pick up approved commits to master and deploy them to the blog's public website.
 
 
 ## Editing the code
