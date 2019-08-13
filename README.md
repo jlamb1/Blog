@@ -9,7 +9,7 @@ You need:
 * `node 10+`
 * `yarn 1.13.0`
 
-Posts are written in markdown. You can use any markdown editor you like. [vscode's markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) plugin is very good for rich editing markdown files. 
+Posts are written in markdown. You can use any markdown editor you like. [vscode's markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) plugin is very good for rich editing markdown files. Follow our [markdown style guide](docs/markdown.md).
 
 To update the blog you must [https://help.github.com/en/articles/fork-a-repo](fork the repository) and submit a pull request across the forks.
 
