@@ -1,34 +1,40 @@
 [
-    {
-        "id": "tparnell",
-        "name": "Tommy Parnell",
-        "avatar": "tparnell.jpeg",
-        "twitter": "TerribleDev",
-        "github": "terribledev",
-        "blog": "https://terrible.dev"
-    },
-    {
-        "id": "klangerman",
-        "name": "Katie Langerman"
-    },
-    {
-        "id": "swoodworth",
-        "name": "Seth Woodworth",
-        "avatar": "swoodworth.jpg"
-    },
-    {
-        "id": "klomeli",
-        "name": "Kyle Lomeli",
-        "avatar": "klomeli.jpeg"
-    },
-    {
-        "id": "sabbott",
-        "name": "Sean Abbott",
-        "avatar": "sabbott.jpg"
-    },
-    {
-        "id": "sushani",
-        "name": "Shayan Ushani",
-        "avatar": "sushani.jpeg"
-    }
+  {
+    "id": "tparnell",
+    "name": "Tommy Parnell",
+    "avatar": "tparnell.jpeg",
+    "twitter": "TerribleDev",
+    "github": "terribledev",
+    "blog": "https://terrible.dev"
+  },
+  {
+    "id": "klangerman",
+    "name": "Katie Langerman"
+  },
+  {
+    "id": "swoodworth",
+    "name": "Seth Woodworth",
+    "avatar": "swoodworth.jpg"
+  },
+  {
+    "id": "klomeli",
+    "name": "Kyle Lomeli",
+    "avatar": "klomeli.jpeg"
+  },
+  {
+    "id": "sabbott",
+    "name": "Sean Abbott",
+    "avatar": "sabbott.jpg"
+  },
+  {
+    "id": "sushani",
+    "name": "Shayan Ushani",
+    "avatar": "sushani.jpeg"
+  },
+  {
+    "id": "kisrael",
+    "name": "Kirk Israel",
+    "avatar": "kisrael.jpg",
+    "blog": "https://kirkdev.blogspot.com/"
+  }
 ]
