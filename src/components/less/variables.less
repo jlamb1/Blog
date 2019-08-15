@@ -1,4 +1,37 @@
-@border-stroke: #e3e3e3;
-@cg-blue: #02A0DC;
+// colors
+@border-stroke: #c2ccd4;
 @fog: #f5f6f6;
 @body: #0a0a0a;
+@body-mid: lighten(@body, 40%);
+@cg-brand-red: #ef3742;
+@cg-brand-blue: #00a0dd;
+@steel-blue: #006598;
+@steel-blue-dark: darken(@steel-blue, 15%);
+@emerald: #2ab94f;
+@link: @steel-blue;
+@link-hover: @steel-blue-dark;
+// not sure about this color yet
+@link-visited: darken(@steel-blue, 8%);
+
+// basics
+@base: 18;
+@baseLineHeight: 1.5;
+@smallerLineHeight: 1.2;
+@transition: all 0.2s ease-in-out;
+@border-radius: 2px;
+
+// media queries
+@min-xlg-desktop : ~"only screen and (min-width: 1440px)";
+@min-lg-desktop : ~"only screen and (min-width: 1280px)";
+@min-desktop : ~"only screen and (min-width: 1024px)";
+@min-tablet : ~"only screen and (min-width: 768px)";
+@max-mobile : ~"only screen and (max-width: 767px)";
+@iphone5: ~'only screen and (min-width: 321px)';
+@iPhone5OrSmaller: ~'only screen and (max-width: 320px)';
+
+// breakpoints
+@xlg-desktop : 1440px;
+@lg-desktop : 1280px;
+@desktop : 1024px;
+@tablet : 768px;
+@mobile : 320px;

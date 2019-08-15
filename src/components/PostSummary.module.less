@@ -1,19 +1,38 @@
-.articleHr {
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+@import (reference) '../components/less/variables.less';
+@import (reference) '../components/less/mixins.less';
+
+.article {
+    .px-rem(margin-bottom, 54);
 }
+
 .h3Style {
-    color: black;
-    margin-bottom: .375rem;
+    .px-rem(margin-bottom, 18);
+
     a {
-        color: black;
         text-decoration: none;
-        &:visited { 
-            color: black;
+
+        &:visited {
+            color: @link-visited;
             text-decoration: none;
         }
+
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+.postMeta {
+    display: flex;
+    color: @body-mid;
+    .font-unit-rem(16);
+
+    .author {
+        font-weight: 900;
+
+        &:after {
+            content: " \2219 ";
+            .px-em-padding(0, 8, 0, 8);
         }
     }
 }

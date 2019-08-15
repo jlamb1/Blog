@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { graphql } from 'gatsby';
-
+import styles from './feed-template.module.less';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PostSummary from '../components/PostSummary';
@@ -25,6 +26,13 @@ const Feed = ({ data, location, pageContext = {} }) => {
         title="All posts"
         keywords={['blog', 'gatsby', 'javascript', 'react']}
       />
+      <header className={styles.headlineWrap}>
+        <h1>Welcome to Revved, the CarGurus Engineering Blog</h1>
+        <p>
+          Written by CarGurus engineers, building the world's most trusted and
+          transparent automotive marketplace.
+        </p>
+      </header>
       {renderFeed}
       <Pagination
         totalCount={totalCount}
