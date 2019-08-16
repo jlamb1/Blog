@@ -8,6 +8,7 @@ import SEO from '../components/seo';
 import Tag from '../components/common/tag.js';
 import styles from './blog-post.module.less';
 import './blog-post.less';
+import 'prismjs/themes/prism.css';
 
 class BlogPostTemplate extends React.Component {
   getTags() {
