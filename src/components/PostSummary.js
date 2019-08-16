@@ -3,7 +3,13 @@ import { Link } from 'gatsby';
 
 import styles from './PostSummary.module.less';
 
-export default function PostSummary({ slug, description, title, date }) {
+export default function PostSummary({
+  author,
+  slug,
+  description,
+  title,
+  date,
+}) {
   return (
     <article key={slug}>
       <h3 className={styles.h3Style}>
@@ -17,6 +23,7 @@ export default function PostSummary({ slug, description, title, date }) {
           __html: description,
         }}
       />
+      <p>{author}</p>
       <hr className={styles.articleHr} />
     </article>
   );
