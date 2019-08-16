@@ -9,8 +9,9 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
-import Twitter from './svg/twitter.svg';
-import GitHub from './svg/github.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import styles from './bio.module.less';
 
 const bioQuery = graphql`
@@ -21,7 +22,7 @@ const bioQuery = graphql`
       nodes {
         base
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 40, height: 40) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -30,11 +31,11 @@ const bioQuery = graphql`
   }
 `;
 
-function Bio({ author }) {
+function Bio({ author, children }) {
   if (!author) {
     return null;
   }
-  const { name, twitter, avatar, github } = author;
+  const { name, avatar, twitter, github } = author;
   // todo: this needs to be broken up better
   return (
     <StaticQuery
@@ -52,7 +53,7 @@ function Bio({ author }) {
                 style={{
                   marginRight: '0.75rem',
                   marginBottom: 0,
-                  minWidth: 50,
+                  minWidth: 40,
                   borderRadius: '100%',
                 }}
                 imgStyle={{
@@ -60,22 +61,33 @@ function Bio({ author }) {
                 }}
               />
             )}
-            <p>
-              Written by &nbsp;
-              <strong>{name}</strong>
-              <span className={styles.social}>
-                {twitter && (
-                  <a href={`https://twitter.com/${twitter}`}>
-                    <Twitter width="1.5em" fill="#1DA1F2" />
-                  </a>
-                )}
-                {github && (
-                  <a href={`https://github.com/${github}`}>
-                    <GitHub width="1.5em" />
-                  </a>
-                )}
-              </span>
-            </p>
+            <span className={styles.nameWrap}>
+              <div className={styles.social}>
+                <p>{name}</p>
+                <span className={github && twitter ? styles.socialIcons : ''}>
+                  {twitter && (
+                    <a href={`https://twitter.com/${twitter}`}>
+                      <FontAwesomeIcon
+                        role="button"
+                        icon={faTwitter}
+                        size="sm"
+                      />
+                    </a>
+                  )}
+                  {github && (
+                    <a href={`https://github.com/${github}`}>
+                      <FontAwesomeIcon
+                        role="button"
+                        icon={faGithub}
+                        size="sm"
+                      />
+                    </a>
+                  )}
+                </span>
+              </div>
+              {/* this is my hacky way of putting the date here */}
+              {children}
+            </span>
           </div>
         );
       }}

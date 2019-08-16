@@ -1,21 +1,44 @@
+@import (reference) './less/variables.less';
+@import (reference) './less/mixins.less';
+
 .bio {
   display: flex;
-  margin-bottom: 3.75rem;
+  align-items: center;
+  .px-rem(margin-bottom, 48);
 }
+
 .social {
-  display: block;
-  svg {
-    margin-right: 0.5em;
+  display: flex;
+  align-items: center;
+
+  a {
+    .px-rem-padding(8, 8, 8, 0);
+  }
+
+  .socialIcons {
+    &:before {
+      content: " \00a0 ";
+      .px-em-padding(0, 4, 0, 4);
+    }
   }
 }
+
 .img {
   position: relative;
   overflow: hidden;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-right: 0.75rem;
   margin-bottom: 0px;
-  min-width: 50px;
+  min-width: 40px;
   border-radius: 100%;
+}
+
+.nameWrap {
+  .font-unit-rem(16);
+
+  p {
+    margin-bottom: 0;
+  }
 }

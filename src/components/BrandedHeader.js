@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,14 +20,14 @@ export default function BrandedHeader() {
           <li>
             <a href="/rss.xml">RSS</a>
           </li>
-          <li>
+          <li className={styles.socialIconSpacing}>
             <a aria-label="github" href="https://github.com/cargurus/Blog">
-              <FontAwesomeIcon role="button" icon={faTwitter} size="md" />
+              <FontAwesomeIcon role="button" icon={faTwitter} size="lg" />
             </a>
           </li>
           <li>
             <a aria-label="twitter" href="https://twitter.com/cargurus/">
-              <FontAwesomeIcon role="button" icon={faGithub} size="md" />
+              <FontAwesomeIcon role="button" icon={faGithub} size="lg" />
             </a>
           </li>
         </ul>

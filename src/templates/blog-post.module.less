@@ -1,17 +1,21 @@
-.time {
-  font-size: 0.87055rem;
-  line-height: 1.5rem;
-  display: block;
-  margin-bottom: 1.5rem;
-  margin-top: -1.5rem;
-}
+@import (reference) '../components/less/variables.less';
+@import (reference) '../components/less/mixins.less';
+
+
 .hr {
   margin-bottom: 1.5rem;
 }
+
+// not sure we really need these buttons?
 .navButtons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: outside none none;
   padding: 0px;
+  margin-left: 0;
+}
+
+.tagWrap {
+  .px-rem(margin-top, 20);
 }

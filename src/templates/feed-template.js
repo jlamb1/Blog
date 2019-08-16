@@ -13,10 +13,10 @@ const Feed = ({ data, location, pageContext = {} }) => {
   const posts = data.allMarkdownRemark.edges;
   const renderFeed = posts.map(({ node }) => (
     <PostSummary
+      {...node.frontmatter}
       key={node.fields.slug}
       title={node.frontmatter.title || node.fields.slug}
       slug={node.frontmatter.permalink || node.fields.slug}
-      date={node.frontmatter.date}
       description={node.frontmatter.description || node.excerpt}
     />
   ));
@@ -29,8 +29,8 @@ const Feed = ({ data, location, pageContext = {} }) => {
       <header className={styles.headlineWrap}>
         <h1>Welcome to Revved, the CarGurus Engineering Blog</h1>
         <p>
-          Written by CarGurus engineers, building the world's most trusted and
-          transparent automotive marketplace.
+          Written by the team building the world's most trusted and transparent
+          automotive marketplace.
         </p>
       </header>
       {renderFeed}
@@ -69,6 +69,7 @@ export const pageQuery = graphql`
             title
             description
             permalink
+            author
           }
         }
       }

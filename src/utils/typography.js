@@ -2,7 +2,7 @@ import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '18px',
-  baseLineHeight: 1.5,
+  baseLineHeight: 1.75,
   bodyWeight: 400,
   boldWeight: 700,
   headerFontFamily: ['Lato', 'Tacoma', 'sans-serif'],

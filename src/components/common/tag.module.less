@@ -14,3 +14,24 @@
     }
     color: black;
 }
+
+.tagList {
+    column-count: 4;
+    margin-left: 0;
+    list-style: none;
+}
+
+.tagInline {
+    list-style: none;
+    margin-left: 0;
+
+    li {
+    display: inline-block;
+
+        &:not(:last-of-type):after {
+            content: ",";
+            display: inline-block;
+            margin-right: 8px;
+        }
+    }
+}
