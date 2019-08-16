@@ -11,6 +11,10 @@ const Feed = ({ data, location, pageContext = {} }) => {
   const { totalCount, current = 1, limit } = pageContext;
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
+  const authors = data.allAuthorsJson.edges.reduce(
+    (acc, { node }) => ({ ...acc, [node.id]: node.name }),
+    {},
+  );
   const renderFeed = posts.map(({ node }) => (
     <PostSummary
       {...node.frontmatter}
@@ -18,6 +22,7 @@ const Feed = ({ data, location, pageContext = {} }) => {
       title={node.frontmatter.title || node.fields.slug}
       slug={node.frontmatter.permalink || node.fields.slug}
       description={node.frontmatter.description || node.excerpt}
+      author={authors[node.frontmatter.author]}
     />
   ));
   return (
@@ -52,6 +57,14 @@ export const pageQuery = graphql`
         title
       }
     }
+    allAuthorsJson {
+      edges {
+        node {
+          id
+          name
+        }
+      }
+    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       skip: $skip
@@ -60,7 +73,7 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 180)
           fields {
             slug
           }

@@ -4,11 +4,11 @@ import { Link } from 'gatsby';
 import styles from './PostSummary.module.less';
 
 export default function PostSummary({
+  author,
   slug,
   description,
   title,
   date,
-  author,
 }) {
   return (
     <article key={slug} className={styles.article}>
