@@ -1,5 +1,6 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
+const visit = require('unist-util-visit');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions;
@@ -22,6 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
               fields {
                 slug
               }
+              htmlAst
               frontmatter {
                 title
                 tags
@@ -47,6 +49,12 @@ exports.createPages = ({ graphql, actions }) => {
       const next = index === 0 ? null : posts[index - 1].node;
       tags = tags.concat(post.node.frontmatter.tags);
       const url = post.node.frontmatter.permalink || post.node.fields.slug;
+      let featuredImages = [];
+      visit(post.node.htmlAst, [{ tagName: 'img', type: 'element' }], node => {
+        if (node && node.properties && node.properties.src) {
+          featuredImages = featuredImages.concat(node.properties.src);
+        }
+      });
       createPage({
         path: url,
         component: blogPost,
@@ -54,6 +62,7 @@ exports.createPages = ({ graphql, actions }) => {
           slug: post.node.fields.slug,
           previous,
           next,
+          featuredImages,
         },
       });
       if (post.node.frontmatter.redirects) {

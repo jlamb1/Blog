@@ -11,7 +11,7 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import { snowplowScript } from './snowplow.js';
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, images = [] }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,14 +20,26 @@ function SEO({ description, lang, meta, keywords, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
     `,
   );
-
+  const { siteUrl } = site.siteMetadata;
   const metaDescription = description || site.siteMetadata.description;
-
+  const imageTags =
+    images && images.length > 0
+      ? images
+          .filter(i => i)
+          .reduce((accum, current) => {
+            const items = [
+              { property: 'og:image', content: `${siteUrl}${current}` },
+              { name: 'twitter:image', content: `${siteUrl}${current}` },
+            ];
+            return accum.concat(items);
+          }, [])
+      : [];
   return (
     <Helmet
       htmlAttributes={{
@@ -52,6 +64,7 @@ function SEO({ description, lang, meta, keywords, title }) {
           property: 'og:type',
           content: 'website',
         },
+        ...imageTags,
         {
           name: 'twitter:card',
           content: 'summary',

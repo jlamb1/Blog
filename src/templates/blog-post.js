@@ -9,6 +9,7 @@ import Tag from '../components/common/tag.js';
 import styles from './blog-post.module.less';
 import tagStyles from '../components/common/tag.module.less';
 import './blog-post.less';
+import 'prismjs/themes/prism.css';
 
 class BlogPostTemplate extends React.Component {
   getTags() {
@@ -42,13 +43,14 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = this.props.data.site.siteMetadata.title;
-    const { previous, next } = this.props.pageContext;
+    const { previous, next, featuredImages = [] } = this.props.pageContext;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          images={featuredImages}
         />
         <h1>{post.frontmatter.title}</h1>
         <Bio author={this.getAuthor()}>
