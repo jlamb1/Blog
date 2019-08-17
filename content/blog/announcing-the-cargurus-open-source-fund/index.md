@@ -10,14 +10,14 @@ I’m very pleased to announce a new initiative to support Free and Open Source 
 
 CarGurus engineers rely on FOSS projects to power our infrastructure. It runs our servers, lints our code, compiles our assets, and lets us build more, faster. And like all engines, FOSS projects need maintenance and support to continue running.
 
-We want to give back to many of these projects so they can continue to drive our infrastructure, and the rest of the web ecosystem. This quarter, we’re giving over $25,000 to support FOSS projects.
+We want to give back to many of these projects so they can continue to drive our infrastructure, and the rest of the web ecosystem. This quarter, we’re giving over `$25`,000 to support FOSS projects.
 
 
 ## Open Source Fund
 
 Here at CarGurus, Senior Software Engineer Wei Croteau proposed giving back to these projects with an Open Source Fund. She organized an OSF committee of engineers experienced with FOSS projects. The group asked CarGurus engineers to submit FOSS projects; that were used at CarGurus, non-profit, and/or worked on by a CarGurus employee. From this list, the OSF Committee vetted the projects, and narrowed it down to nine projects to support in Q1 of 2019.
 
-In the spirit of collaboration and bottom-up participation, a pool of $15,600 was dispersed across the 156 members of our engineering organization. Each engineer choose which project received their individual contribution of $100. On top of the pool of engineering directed funds, the OSF committee highlighted one project to give an additional $10,000. As the OSF continues, the pool available the engineering directed funds will increase. Each engineer will continue to choose a project to receive $100 per quarter.
+In the spirit of collaboration and bottom-up participation, a pool of `$15,600` was dispersed across the 156 members of our engineering organization. Each engineer choose which project received their individual contribution of `$100`. On top of the pool of engineering directed funds, the OSF committee highlighted one project to give an additional `$10,000`. As the OSF continues, the pool available the engineering directed funds will increase. Each engineer will continue to choose a project to receive `$100` per quarter.
 
 ## Projects we’re funding in the first quarter of 2019
 
@@ -42,7 +42,7 @@ Apache Kafka is a massively scalable, fault-tolerant, distributed streaming plat
 
 Apache Airflow is the DAG-based ETL scheduling framework that enables our data engineering teams to centralize the company’s data assets in timely, reliable fashion. It provides complex dependency management for modeling across hundreds of data sources, enables detailed introspection into status and timing, and powers our highly-concurrent distributed ETL architecture.
 
-Due to the massive amount of software and libraries from Apache that power CarGurus, the OSF committee has chosen them as our highlight project, and granted them an additional $10,000 on top of our engineers’ votes.
+Due to the massive amount of software and libraries from Apache that power CarGurus, the OSF committee has chosen them as our highlight project, and granted them an additional `$10,000` on top of our engineers’ votes.
 
 ## On-going support
 
