@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `The CarGurus Engineering Blog`,
     author: `CarGurus`,
-    description: `The CarGurus engineering blog`,
+    description: `Welcome to Revved, the CarGurus Engineering Blog. Written by the team building the world's most trusted and transparent automotive marketplace.`,
     siteUrl: process.env.NODE_ENV !== 'production' ? `http://localhost:8000` : `https://cargurus.dev`,
     social: {
       twitter: `CarGurus`,

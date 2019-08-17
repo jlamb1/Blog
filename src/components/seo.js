@@ -34,7 +34,7 @@ function SEO({ description, lang, meta, keywords, title, images = [] }) {
           .filter(i => i)
           .reduce((accum, current) => {
             const items = [
-              { name: 'og:image', content: `${siteUrl}${current}` },
+              { property: 'og:image', content: `${siteUrl}${current}` },
               { name: 'twitter:image', content: `${siteUrl}${current}` },
             ];
             return accum.concat(items);
