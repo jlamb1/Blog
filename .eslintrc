@@ -12,7 +12,8 @@
       "indent": "off",
       "prettier/prettier": "error",
       "react/jsx-one-expression-per-line": "off",
-      "arrow-parens": "off"
+      "arrow-parens": "off",
+      "react/no-unescaped-entities": "0"
     },
     "extends": [
       "airbnb"

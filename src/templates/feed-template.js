@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { graphql } from 'gatsby';
 import styles from './feed-template.module.less';
