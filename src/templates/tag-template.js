@@ -10,12 +10,17 @@ const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const siteTitle = `posts tagged with ${tag}`;
   const posts = data.allMarkdownRemark.edges;
+  const authors = data.allAuthorsJson.edges.reduce(
+    (acc, { node }) => ({ ...acc, [node.id]: node.name }),
+    {},
+  );
   const renderedPost = posts.map(({ node }) => (
     <PostSummary
       title={node.frontmatter.title || node.fields.slug}
       slug={node.frontmatter.permalink || node.fields.slug}
       date={node.frontmatter.date}
       description={node.frontmatter.description || node.excerpt}
+      author={authors[node.frontmatter.author]}
     />
   ));
   return (
@@ -30,6 +35,14 @@ export default Tags;
 
 export const pageQuery = graphql`
   query($tag: String) {
+    allAuthorsJson {
+      edges {
+        node {
+          id
+          name
+        }
+      }
+    }
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
@@ -47,6 +60,7 @@ export const pageQuery = graphql`
             title
             description
             permalink
+            author
           }
         }
       }

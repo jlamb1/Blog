@@ -13,6 +13,7 @@
       "prettier/prettier": "error",
       "react/jsx-one-expression-per-line": "off",
       "arrow-parens": "off",
+      "react/no-unescaped-entities": "0",
       "operator-linebreak": "off"
     },
     "extends": [

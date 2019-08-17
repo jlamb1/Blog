@@ -7,6 +7,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Tag from '../components/common/tag.js';
 import styles from './blog-post.module.less';
+import tagStyles from '../components/common/tag.module.less';
 import './blog-post.less';
 import 'prismjs/themes/prism.css';
 
@@ -18,12 +19,15 @@ class BlogPostTemplate extends React.Component {
     const tags = this.props.data.markdownRemark.frontmatter.tags
       .map(a => a.toLowerCase())
       .sort()
-      .map(tag => <Tag key={tag} tagName={tag} />);
+      .map(tag => (
+        <li>
+          <Tag key={tag} tagName={tag} />
+        </li>
+      ));
     return (
-      <div>
+      <div className={styles.tagWrap}>
         Tagged In:
-        {tags}
-        <br />
+        <ul className={tagStyles.tagInline}>{tags}</ul>
       </div>
     );
   }
@@ -49,11 +53,12 @@ class BlogPostTemplate extends React.Component {
           images={featuredImages}
         />
         <h1>{post.frontmatter.title}</h1>
-        <time className={styles.time}>{post.frontmatter.date}</time>
+        <Bio author={this.getAuthor()}>
+          <time className={styles.time}>{post.frontmatter.date}</time>
+        </Bio>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         {this.getTags()}
         <hr className={styles.hr} />
-        <Bio author={this.getAuthor()} />
 
         <ul className={styles.navButtons}>
           <li>

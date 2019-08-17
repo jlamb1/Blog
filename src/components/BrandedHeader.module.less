@@ -1,24 +1,66 @@
 @import (reference) './less/variables.less';
+@import (reference) './less/mixins.less';
+
 .brandedHeader {
-    padding: 1rem 1rem 1rem 1rem;
-    border-bottom: 1px solid @border-stroke;
-    background-color: white;
-    color: black;
     display: flex;
-    .logo {
-        width: 10rem;
-    }
-    .spacer {
-        flex-grow: 1;
-    }
-    .hamburger {
-        align-self: center;
-        &:hover {
-            cursor: pointer;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    .logoWrap {
+        display: flex;
+        padding: 18px;
+
+        .logo {
+            box-sizing: content-box;
+            width: 167px;
+            height: 100%;
         }
     }
-    svg {
-        fill: @body;
-        width: 1em;
+
+    .navLinks {
+        margin-left: unset;
+
+        ul {
+            display: flex;
+            margin-left: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style: none;
+                margin-bottom: 0;
+
+                a {
+                    text-decoration: none;
+                    .px-rem(padding, 18);
+
+                    // for static load
+                    svg {
+                        width: 1em;
+                        overflow: visible;
+                        vertical-align: -0.225em;
+                        font-size: 1.3333333333em;
+                        line-height: 0.75em;
+                    }
+                }
+
+                &.socialIconSpacing {
+                    a {
+                        .px-rem(padding-right, 0);
+                        .px-rem(padding-left, 27);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media @min-tablet {
+    // center align the logo and navlinks
+    .brandedHeader {
+        .navLinks {
+            margin-left: auto;
+        }
     }
 }

@@ -11,20 +11,21 @@ export default function PostSummary({
   date,
 }) {
   return (
-    <article key={slug}>
+    <article key={slug} className={styles.article}>
       <h3 className={styles.h3Style}>
         <Link style={{ boxShadow: 'none' }} to={slug}>
           {title}
         </Link>
       </h3>
-      <time>{date}</time>
       <p
         dangerouslySetInnerHTML={{
           __html: description,
         }}
       />
-      <p>{author}</p>
-      <hr className={styles.articleHr} />
+      <div className={styles.postMeta}>
+        <p className={styles.author}>{author}</p>
+        <time>{date}</time>
+      </div>
     </article>
   );
 }

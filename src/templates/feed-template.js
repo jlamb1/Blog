@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-
+import styles from './feed-template.module.less';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PostSummary from '../components/PostSummary';
@@ -16,10 +16,10 @@ const Feed = ({ data, location, pageContext = {} }) => {
   );
   const renderFeed = posts.map(({ node }) => (
     <PostSummary
+      {...node.frontmatter}
       key={node.fields.slug}
       title={node.frontmatter.title || node.fields.slug}
       slug={node.frontmatter.permalink || node.fields.slug}
-      date={node.frontmatter.date}
       description={node.frontmatter.description || node.excerpt}
       author={authors[node.frontmatter.author]}
     />
@@ -30,6 +30,13 @@ const Feed = ({ data, location, pageContext = {} }) => {
         title="All posts"
         keywords={['blog', 'gatsby', 'javascript', 'react']}
       />
+      <header className={styles.headlineWrap}>
+        <h1>Welcome to Revved, the CarGurus Engineering Blog</h1>
+        <p>
+          Written by the team building the world's most trusted and transparent
+          automotive marketplace.
+        </p>
+      </header>
       {renderFeed}
       <Pagination
         totalCount={totalCount}
