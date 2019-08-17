@@ -22,12 +22,12 @@ export default function BrandedHeader() {
           </li>
           <li className={styles.socialIconSpacing}>
             <a aria-label="github" href="https://github.com/cargurus/Blog">
-              <FontAwesomeIcon role="button" icon={faTwitter} size="lg" />
+              <FontAwesomeIcon role="button" icon={faTwitter} />
             </a>
           </li>
           <li>
             <a aria-label="twitter" href="https://twitter.com/cargurus/">
-              <FontAwesomeIcon role="button" icon={faGithub} size="lg" />
+              <FontAwesomeIcon role="button" icon={faGithub} />
             </a>
           </li>
         </ul>

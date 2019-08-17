@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    // border-bottom: 1px solid @border-stroke;
 
     .logoWrap {
         display: flex;
@@ -35,6 +34,15 @@
                 a {
                     text-decoration: none;
                     .px-rem(padding, 18);
+
+                    // for static load
+                    svg {
+                        width: 1em;
+                        overflow: visible;
+                        vertical-align: -0.225em;
+                        font-size: 1.3333333333em;
+                        line-height: 0.75em;
+                    }
                 }
 
                 &.socialIconSpacing {
