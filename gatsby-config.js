@@ -3,7 +3,7 @@ module.exports = {
     title: `The CarGurus Engineering Blog`,
     author: `CarGurus`,
     description: `The CarGurus engineering blog`,
-    siteUrl: `https://cargurus.dev`,
+    siteUrl: process.env.NODE_ENV !== 'production' ? `http://localhost:8000` : `https://cargurus.dev`,
     social: {
       twitter: `CarGurus`,
     },
@@ -185,6 +185,6 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
-    },
+    }
   ],
 };

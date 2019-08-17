@@ -43,7 +43,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "unist-util-visit": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -79,6 +80,7 @@
     "build:echo": "echo \"👷‍ Attempting to build gatsby blog\"",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "develop:debug": "node --inspect-brk ./node_modules/.bin/gatsby build",
     "prettier:fix": "prettier --write src/**/*.{js,jsx}",
     "start": "yarn run develop",
     "serve": "gatsby serve",
