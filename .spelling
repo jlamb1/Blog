@@ -79,6 +79,8 @@ processing.org
 p5js.org
 OpenProcessing
 80s
+siloed
+P2P
  - content/blog/Cutting-our-webpack-build-time-in-half/index.md
 DLL's
 HashCache
@@ -92,3 +94,5 @@ pre-processing
 9AM
 4AM
 emojis
+ - content/blog/embrace-project-ownership-and-swift-iteration/index.md
+rollout
