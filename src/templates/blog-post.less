@@ -1,18 +1,30 @@
 @import (reference) '../components/less/variables.less';
 
 .katex {
-    background-color: @fog;
-    padding: .2rem;
-    border-radius: .2rem;
+  background-color: @fog;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
 }
 
 .katex-display {
+  background-color: @fog;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  .katex {
+    padding: 0;
+    border-radius: 0;
     background-color: @fog;
-    padding: 1rem;
-    border-radius: .5rem;
-    .katex {
-        padding: 0;
-        border-radius: 0;
-        background-color: @fog;
-    }
+  }
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.gatsby-resp-image-figcaption {
+  color: @body-mid;
+  font-size: 90%;
+  font-style: italic;
+  text-align: center;
 }

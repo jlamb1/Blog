@@ -36,5 +36,13 @@
     "name": "Kirk Israel",
     "avatar": "kisrael.jpg",
     "blog": "https://kirkdev.blogspot.com/"
+  },
+  {
+    "id": "bchitester",
+    "name": "Brian Chitester",
+    "avatar": "bchitester.jpg",
+    "twitter": "yagoogaly",
+    "github": "brianchitester",
+    "blog": "https://brianchitester.com"
   }
 ]
