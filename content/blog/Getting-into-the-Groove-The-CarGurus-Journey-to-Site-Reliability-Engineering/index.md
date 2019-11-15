@@ -2,6 +2,7 @@
 title: "Getting into the Groove: The CarGurus Journey to Site Reliability Engineering"
 date: "2019-10-10T17:32:23.279Z"
 author: abonassera
+permalink: "/Getting into the Groove: The CarGurus Journey to Site Reliability Engineering/"
 tags:
 - SRE
 - culture

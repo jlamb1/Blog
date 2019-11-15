@@ -48,6 +48,7 @@
     "unist-util-visit": "^2.0.0"
   },
   "devDependencies": {
+    "chalk": "^3.0.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-loader": "^2.1.2",
@@ -77,7 +78,7 @@
     }
   },
   "scripts": {
-    "all": "yarn run --silent check:spell:echo && yarn run check:spell:ci && yarn run build:echo && yarn run build",
+    "all": "yarn run check:directories && yarn run --silent check:spell:echo && yarn run check:spell:ci && yarn run build:echo && yarn run build",
     "build:echo": "echo \"👷‍ Attempting to build gatsby blog\"",
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -85,6 +86,7 @@
     "prettier:fix": "prettier --write src/**/*.{js,jsx}",
     "start": "yarn run develop",
     "serve": "gatsby serve",
+    "check:directories": "node lintDirectories.js",
     "check:spell": "mdspell --ignore-numbers --en-us content/**/*.md",
     "check:spell:ci": "mdspell --report --ignore-numbers --en-us content/**/*.md",
     "check:spell:echo": "echo \"👀 Checking your spelling\"",
