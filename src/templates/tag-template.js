@@ -11,7 +11,7 @@ const Tags = ({ pageContext, data }) => {
   const siteTitle = `posts tagged with ${tag}`;
   const posts = data.allMarkdownRemark.edges;
   const authors = data.allAuthorsJson.edges.reduce(
-    (acc, { node }) => ({ ...acc, [node.id]: node.name }),
+    (acc, { node }) => ({ ...acc, [node.id]: node }),
     {},
   );
   const renderedPost = posts.map(({ node }) => (
@@ -44,6 +44,7 @@ export const pageQuery = graphql`
         node {
           id
           name
+          avatar
         }
       }
     }
