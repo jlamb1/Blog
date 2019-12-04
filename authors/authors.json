@@ -49,5 +49,10 @@
   {  "id": "abonassera",
      "name": "Alex Bonassera",
      "avatar": "abonassera.jpg"
+  },
+  { "id": "kkumar",
+    "name": "Krishna Kumar",
+    "avatar": "kkumar.png",
+    "linkedin": "https://www.linkedin.com/in/krishami/"
   }
 ]
