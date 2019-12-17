@@ -97,6 +97,15 @@ SREcon
 p8s
 graylog
 SREs
+OpenJDK
+JDK
+polyfills
+bundler
+RubyGems
+pre-built
+HotSpot
+vm
+OpenJ9
  - content/blog/Cutting-our-webpack-build-time-in-half/index.md
 DLL's
 HashCache
@@ -116,3 +125,6 @@ KonMari
 Kondo
 declutter
 webpack-bundle-analyzer
+ - content/blog/Third-Quarter-Open-Source-Funding/index.md
+AdoptOpenJDK
+PyPI
