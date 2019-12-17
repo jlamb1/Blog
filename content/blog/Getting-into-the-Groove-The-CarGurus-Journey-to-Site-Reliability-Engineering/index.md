@@ -2,12 +2,13 @@
 title: "Getting into the Groove: The CarGurus Journey to Site Reliability Engineering"
 date: "2019-10-10T17:32:23.279Z"
 author: abonassera
-permalink: "/Getting into the Groove: The CarGurus Journey to Site Reliability Engineering/"
+permalink: "/Getting-into-the-Groove-The-CarGurus-Journey-to-Site-Reliability-Engineering/"
+redirects:
+- "/Getting into the Groove: The CarGurus Journey to Site Reliability Engineering/"
 tags:
 - SRE
 - culture
 ---
-
 ### An Introduction
 A few years ago Google shared how they run their production environments when they published a book introducing [Site Reliability Engineering](https://landing.google.com/sre/books/) to the world. At the time I was managing a production operations team, and found the ideas and processes Google had put in place to manage their "world scale" resources inspiring. I felt that my team at the time was struggling under the operational toil of keeping our public facing high traffic web services running. We were staffed primarily to do manual, repetitive toil and we were not considered part of the "Engineering" organization. My team was made up of well-paid but frustrated engineers that looked at monitoring services on large TV screens in a NOC waiting for green things to become red things. To me, the concept of treating operations as a software engineering problem via a formalized, consistent model and refusing to accept repetitive toil as a solution for problems felt like it could provide an improvement to how things worked in the technical world.
 
