@@ -8,4 +8,4 @@ tags:
 ---
 Last month CarGurus played host to the latest local Kubernetes Meetup. Site Reliablity Engineers Charles Essien and Nurus Chowdry presented our owner journey with Kubernetes in their session, "The CarGurus Roadtrip to Observability." Check out the full presention video:
 
-! [CarGurus Charles Essien and Nurus Chowdry] (Kubernetes Meetup FULL.mp4)
+<video src="Kubernetes Meetup FULL.mp4" width="320" height="200" controls preload></video>
