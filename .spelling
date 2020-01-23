@@ -101,6 +101,15 @@ Essien
 Nurus
 Chowdry
 roadtrip
+OpenJDK
+JDK
+polyfills
+bundler
+RubyGems
+pre-built
+HotSpot
+vm
+OpenJ9
  - content/blog/Cutting-our-webpack-build-time-in-half/index.md
 DLL's
 HashCache
@@ -123,3 +132,6 @@ webpack-bundle-analyzer
  - content/blog/CarGurus-hosts-kubernetes-meetup/index.md
 Meetup
 Reliablity
+ - content/blog/Third-Quarter-Open-Source-Funding/index.md
+AdoptOpenJDK
+PyPI
