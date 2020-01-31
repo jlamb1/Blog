@@ -1,8 +1,7 @@
 ---
-title: Meet the CTO: a Q&A with Kyle Lomeli
+title: "Meet the CTO: a Q&A with Kyle Lomeli"
 date: "2020-01-28T12:00:00.000Z"
 author: "eng"
-description: 
 tags:
 - blog
 - culture
