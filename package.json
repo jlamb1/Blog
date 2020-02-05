@@ -14,7 +14,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "clsx": "^1.0.4",
     "gatsby": "^2.3.16",
-    "gatsby-image": "^2.0.37",
+    "gatsby-image": "^2.2.40",
     "gatsby-plugin-feed": "^2.1.0",
     "gatsby-plugin-google-analytics": "^2.0.18",
     "gatsby-plugin-less": "^2.0.12",
@@ -44,6 +44,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
+    "rehype-react": "^4.0.1",
     "typography": "^0.16.19",
     "unist-util-visit": "^2.0.0"
   },
