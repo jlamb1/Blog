@@ -106,6 +106,17 @@ pre-built
 HotSpot
 vm
 OpenJ9
+Lomeli
+SparkNotes
+Freemarker
+templating
+reactjs
+mysql
+mongodb
+nosql
+microservices-oriented
+Bazel
+Haskell
  - content/blog/Cutting-our-webpack-build-time-in-half/index.md
 DLL's
 HashCache
@@ -128,3 +139,11 @@ webpack-bundle-analyzer
  - content/blog/Third-Quarter-Open-Source-Funding/index.md
 AdoptOpenJDK
 PyPI
+ - content/blog/CTO-QA/index.md
+CTO
+2020-01-28T12
+00.000Z
+declaratively
+knowns
+3am
+all-nighter
