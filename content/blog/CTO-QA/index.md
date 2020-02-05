@@ -9,7 +9,6 @@ tags:
 
 
 <div style="max-width: 200px;"><img src="Kyle.jpg" alt="CarGurus CTO Kyle Lomeli" /></div>
-<figcaption>CarGurus CTO Kyle Lomeli</figcaption>
 
 **To start, can you give me the SparkNotes version of the CarGurus tech stack?**
 
