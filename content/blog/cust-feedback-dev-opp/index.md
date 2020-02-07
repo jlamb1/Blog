@@ -8,9 +8,9 @@ tags:
 ---
 
 
-*This article originally appeared on TechCrunch [ExtraCrunch] (https://techcrunch.com/2020/01/31/customer-feedback-is-a-development-opportunity/)*
+*This article originally appeared on TechCrunch [ExtraCrunch](https://techcrunch.com/2020/01/31/customer-feedback-is-a-development-opportunity/)*
 
-Online [commerce] (https://www.digitalcommerce360.com/article/us-ecommerce-sales/) accounted for nearly $518 billion in revenue in the United States alone last year. The growing number of online marketplaces like Amazon and eBay will command [40%] (https://readwrite.com/2018/10/30/how-digital-marketplaces-will-again-redefine-commerce-and-experience/) of the global retail market in 2020. As the number of digital offerings — not only marketplaces but also online storefronts and company websites — available to consumers continues to grow, the primary challenge for any online platform lies in setting itself apart.
+Online [commerce](https://www.digitalcommerce360.com/article/us-ecommerce-sales/) accounted for nearly $518 billion in revenue in the United States alone last year. The growing number of online marketplaces like Amazon and eBay will command [40%](https://readwrite.com/2018/10/30/how-digital-marketplaces-will-again-redefine-commerce-and-experience/) of the global retail market in 2020. As the number of digital offerings — not only marketplaces but also online storefronts and company websites — available to consumers continues to grow, the primary challenge for any online platform lies in setting itself apart.
 
 The central question for how to accomplish this: Where does differentiation matter most?
 
@@ -20,7 +20,7 @@ To be successful, a company should adopt a consumer-first philosophy that inform
 
 Taking a customer-driven approach to platform improvements
 
-According to research from Salesforce  and Publicis Sapient, [57%] (http://www2.publicisgroupe.net/shopper-first) of customers say that, with price being equal, customer experience drives where they shop. Customers surveyed in the report cited product availability, variety and even inspiration as top drivers. Marketplaces like Amazon and eBay draw an increasing [number] (http://www2.publicisgroupe.net/shopper-first) of those customers thanks to the respective front-end experiences they offer.
+According to research from Salesforce  and Publicis Sapient, [57%](http://www2.publicisgroupe.net/shopper-first) of customers say that, with price being equal, customer experience drives where they shop. Customers surveyed in the report cited product availability, variety and even inspiration as top drivers. Marketplaces like Amazon and eBay draw an increasing [number](http://www2.publicisgroupe.net/shopper-first) of those customers thanks to the respective front-end experiences they offer.
 
 To continue to attract consumers (or win them back) with experience, marketplaces and other online platforms need to understand which obstacles stand in the way of users quickly finding what they want or need — and then work to remove them swiftly. Whether these obstacles are rooted in uncertainty of the product itself or anxiety over the purchase process among other common online-shopping obstacles, a company needs to quickly identify and take steps to remediate these issues. This can be accomplished through a number of mechanisms such as usability studies, that help developers see, during early iterations of a feature or update, how a test group of consumers respond to given solutions on the site — and see if they run into challenges or confusion. Additionally, A/B tests help developers compare feature variations for viability on the site.
 
